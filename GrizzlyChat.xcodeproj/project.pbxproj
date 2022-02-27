@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9530A9427CBAF7B00B0C20E /* GrizzlyChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9530A9327CBAF7B00B0C20E /* GrizzlyChatApp.swift */; };
+		D9530A9627CBAF7B00B0C20E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9530A9527CBAF7B00B0C20E /* ContentView.swift */; };
+		D9530A9827CBAF7D00B0C20E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9530A9727CBAF7D00B0C20E /* Assets.xcassets */; };
+		D9530A9B27CBAF7D00B0C20E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9530A9A27CBAF7D00B0C20E /* Preview Assets.xcassets */; };
+		D9530AA527CBAF7D00B0C20E /* GrizzlyChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9530AA427CBAF7D00B0C20E /* GrizzlyChatTests.swift */; };
+		D9530AAF27CBAF7D00B0C20E /* GrizzlyChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9530AAE27CBAF7D00B0C20E /* GrizzlyChatUITests.swift */; };
+		D9530AB127CBAF7D00B0C20E /* GrizzlyChatUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9530AB027CBAF7D00B0C20E /* GrizzlyChatUITestsLaunchTests.swift */; };
+		D9530ABF27CBB4B400B0C20E /* TitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9530ABE27CBB4B400B0C20E /* TitleRow.swift */; };
+		D9530AC227CBB9D200B0C20E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9530AC127CBB9D200B0C20E /* Message.swift */; };
+		D9530AC427CBBA8900B0C20E /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9530AC327CBBA8900B0C20E /* MessageBubble.swift */; };
+		D9530AC627CBC51800B0C20E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9530AC527CBC51800B0C20E /* Extension.swift */; };
+		D9530AC827CBC5EF00B0C20E /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9530AC727CBC5EF00B0C20E /* MessageField.swift */; };
+		D9530ACA27CBD6B400B0C20E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D9530AC927CBD6B400B0C20E /* GoogleService-Info.plist */; };
+		D9530ACD27CC097800B0C20E /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D9530ACC27CC097800B0C20E /* FirebaseFirestore */; };
+		D9530ACF27CC097800B0C20E /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = D9530ACE27CC097800B0C20E /* FirebaseFirestoreSwift-Beta */; };
+		D9530AD127CC1AF100B0C20E /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9530AD027CC1AF100B0C20E /* MessagesManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9530AA127CBAF7D00B0C20E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9530A8827CBAF7B00B0C20E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9530A8F27CBAF7B00B0C20E;
+			remoteInfo = GrizzlyChat;
+		};
+		D9530AAB27CBAF7D00B0C20E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9530A8827CBAF7B00B0C20E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9530A8F27CBAF7B00B0C20E;
+			remoteInfo = GrizzlyChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D9530A9027CBAF7B00B0C20E /* GrizzlyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrizzlyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9530A9327CBAF7B00B0C20E /* GrizzlyChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrizzlyChatApp.swift; sourceTree = "<group>"; };
+		D9530A9527CBAF7B00B0C20E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D9530A9727CBAF7D00B0C20E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9530A9A27CBAF7D00B0C20E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D9530AA027CBAF7D00B0C20E /* GrizzlyChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrizzlyChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9530AA427CBAF7D00B0C20E /* GrizzlyChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrizzlyChatTests.swift; sourceTree = "<group>"; };
+		D9530AAA27CBAF7D00B0C20E /* GrizzlyChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrizzlyChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9530AAE27CBAF7D00B0C20E /* GrizzlyChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrizzlyChatUITests.swift; sourceTree = "<group>"; };
+		D9530AB027CBAF7D00B0C20E /* GrizzlyChatUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrizzlyChatUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D9530ABE27CBB4B400B0C20E /* TitleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleRow.swift; sourceTree = "<group>"; };
+		D9530AC127CBB9D200B0C20E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		D9530AC327CBBA8900B0C20E /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		D9530AC527CBC51800B0C20E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		D9530AC727CBC5EF00B0C20E /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
+		D9530AC927CBD6B400B0C20E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D9530AD027CC1AF100B0C20E /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9530A8D27CBAF7B00B0C20E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9530ACD27CC097800B0C20E /* FirebaseFirestore in Frameworks */,
+				D9530ACF27CC097800B0C20E /* FirebaseFirestoreSwift-Beta in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9530A9D27CBAF7D00B0C20E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9530AA727CBAF7D00B0C20E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9530A8727CBAF7B00B0C20E = {
+			isa = PBXGroup;
+			children = (
+				D9530A9227CBAF7B00B0C20E /* GrizzlyChat */,
+				D9530AA327CBAF7D00B0C20E /* GrizzlyChatTests */,
+				D9530AAD27CBAF7D00B0C20E /* GrizzlyChatUITests */,
+				D9530A9127CBAF7B00B0C20E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9530A9127CBAF7B00B0C20E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9530A9027CBAF7B00B0C20E /* GrizzlyChat.app */,
+				D9530AA027CBAF7D00B0C20E /* GrizzlyChatTests.xctest */,
+				D9530AAA27CBAF7D00B0C20E /* GrizzlyChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9530A9227CBAF7B00B0C20E /* GrizzlyChat */ = {
+			isa = PBXGroup;
+			children = (
+				D9530AC927CBD6B400B0C20E /* GoogleService-Info.plist */,
+				D9530A9327CBAF7B00B0C20E /* GrizzlyChatApp.swift */,
+				D9530A9527CBAF7B00B0C20E /* ContentView.swift */,
+				D9530AC027CBB85000B0C20E /* Models */,
+				D9530ABD27CBB48000B0C20E /* Components */,
+				D9530A9727CBAF7D00B0C20E /* Assets.xcassets */,
+				D9530A9927CBAF7D00B0C20E /* Preview Content */,
+				D9530AC527CBC51800B0C20E /* Extension.swift */,
+				D9530AD027CC1AF100B0C20E /* MessagesManager.swift */,
+			);
+			path = GrizzlyChat;
+			sourceTree = "<group>";
+		};
+		D9530A9927CBAF7D00B0C20E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D9530A9A27CBAF7D00B0C20E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D9530AA327CBAF7D00B0C20E /* GrizzlyChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9530AA427CBAF7D00B0C20E /* GrizzlyChatTests.swift */,
+			);
+			path = GrizzlyChatTests;
+			sourceTree = "<group>";
+		};
+		D9530AAD27CBAF7D00B0C20E /* GrizzlyChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D9530AAE27CBAF7D00B0C20E /* GrizzlyChatUITests.swift */,
+				D9530AB027CBAF7D00B0C20E /* GrizzlyChatUITestsLaunchTests.swift */,
+			);
+			path = GrizzlyChatUITests;
+			sourceTree = "<group>";
+		};
+		D9530ABD27CBB48000B0C20E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D9530ABE27CBB4B400B0C20E /* TitleRow.swift */,
+				D9530AC327CBBA8900B0C20E /* MessageBubble.swift */,
+				D9530AC727CBC5EF00B0C20E /* MessageField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D9530AC027CBB85000B0C20E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D9530AC127CBB9D200B0C20E /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9530A8F27CBAF7B00B0C20E /* GrizzlyChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9530AB427CBAF7D00B0C20E /* Build configuration list for PBXNativeTarget "GrizzlyChat" */;
+			buildPhases = (
+				D9530A8C27CBAF7B00B0C20E /* Sources */,
+				D9530A8D27CBAF7B00B0C20E /* Frameworks */,
+				D9530A8E27CBAF7B00B0C20E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrizzlyChat;
+			packageProductDependencies = (
+				D9530ACC27CC097800B0C20E /* FirebaseFirestore */,
+				D9530ACE27CC097800B0C20E /* FirebaseFirestoreSwift-Beta */,
+			);
+			productName = GrizzlyChat;
+			productReference = D9530A9027CBAF7B00B0C20E /* GrizzlyChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9530A9F27CBAF7D00B0C20E /* GrizzlyChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9530AB727CBAF7D00B0C20E /* Build configuration list for PBXNativeTarget "GrizzlyChatTests" */;
+			buildPhases = (
+				D9530A9C27CBAF7D00B0C20E /* Sources */,
+				D9530A9D27CBAF7D00B0C20E /* Frameworks */,
+				D9530A9E27CBAF7D00B0C20E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9530AA227CBAF7D00B0C20E /* PBXTargetDependency */,
+			);
+			name = GrizzlyChatTests;
+			productName = GrizzlyChatTests;
+			productReference = D9530AA027CBAF7D00B0C20E /* GrizzlyChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D9530AA927CBAF7D00B0C20E /* GrizzlyChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9530ABA27CBAF7D00B0C20E /* Build configuration list for PBXNativeTarget "GrizzlyChatUITests" */;
+			buildPhases = (
+				D9530AA627CBAF7D00B0C20E /* Sources */,
+				D9530AA727CBAF7D00B0C20E /* Frameworks */,
+				D9530AA827CBAF7D00B0C20E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9530AAC27CBAF7D00B0C20E /* PBXTargetDependency */,
+			);
+			name = GrizzlyChatUITests;
+			productName = GrizzlyChatUITests;
+			productReference = D9530AAA27CBAF7D00B0C20E /* GrizzlyChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9530A8827CBAF7B00B0C20E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					D9530A8F27CBAF7B00B0C20E = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					D9530A9F27CBAF7D00B0C20E = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = D9530A8F27CBAF7B00B0C20E;
+					};
+					D9530AA927CBAF7D00B0C20E = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = D9530A8F27CBAF7B00B0C20E;
+					};
+				};
+			};
+			buildConfigurationList = D9530A8B27CBAF7B00B0C20E /* Build configuration list for PBXProject "GrizzlyChat" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9530A8727CBAF7B00B0C20E;
+			packageReferences = (
+				D9530ACB27CC097700B0C20E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = D9530A9127CBAF7B00B0C20E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9530A8F27CBAF7B00B0C20E /* GrizzlyChat */,
+				D9530A9F27CBAF7D00B0C20E /* GrizzlyChatTests */,
+				D9530AA927CBAF7D00B0C20E /* GrizzlyChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9530A8E27CBAF7B00B0C20E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9530A9B27CBAF7D00B0C20E /* Preview Assets.xcassets in Resources */,
+				D9530A9827CBAF7D00B0C20E /* Assets.xcassets in Resources */,
+				D9530ACA27CBD6B400B0C20E /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9530A9E27CBAF7D00B0C20E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9530AA827CBAF7D00B0C20E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9530A8C27CBAF7B00B0C20E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9530A9627CBAF7B00B0C20E /* ContentView.swift in Sources */,
+				D9530AC227CBB9D200B0C20E /* Message.swift in Sources */,
+				D9530AC427CBBA8900B0C20E /* MessageBubble.swift in Sources */,
+				D9530AD127CC1AF100B0C20E /* MessagesManager.swift in Sources */,
+				D9530AC827CBC5EF00B0C20E /* MessageField.swift in Sources */,
+				D9530AC627CBC51800B0C20E /* Extension.swift in Sources */,
+				D9530A9427CBAF7B00B0C20E /* GrizzlyChatApp.swift in Sources */,
+				D9530ABF27CBB4B400B0C20E /* TitleRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9530A9C27CBAF7D00B0C20E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9530AA527CBAF7D00B0C20E /* GrizzlyChatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9530AA627CBAF7D00B0C20E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9530AB127CBAF7D00B0C20E /* GrizzlyChatUITestsLaunchTests.swift in Sources */,
+				D9530AAF27CBAF7D00B0C20E /* GrizzlyChatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9530AA227CBAF7D00B0C20E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9530A8F27CBAF7B00B0C20E /* GrizzlyChat */;
+			targetProxy = D9530AA127CBAF7D00B0C20E /* PBXContainerItemProxy */;
+		};
+		D9530AAC27CBAF7D00B0C20E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9530A8F27CBAF7B00B0C20E /* GrizzlyChat */;
+			targetProxy = D9530AAB27CBAF7D00B0C20E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D9530AB227CBAF7D00B0C20E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9530AB327CBAF7D00B0C20E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9530AB527CBAF7D00B0C20E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GrizzlyChat/Preview Content\"";
+				DEVELOPMENT_TEAM = 8VBMHL3Y6P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grizzlystudio.GrizzlyChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9530AB627CBAF7D00B0C20E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GrizzlyChat/Preview Content\"";
+				DEVELOPMENT_TEAM = 8VBMHL3Y6P;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grizzlystudio.GrizzlyChat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D9530AB827CBAF7D00B0C20E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8VBMHL3Y6P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grizzlystudio.GrizzlyChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrizzlyChat.app/GrizzlyChat";
+			};
+			name = Debug;
+		};
+		D9530AB927CBAF7D00B0C20E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8VBMHL3Y6P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grizzlystudio.GrizzlyChatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrizzlyChat.app/GrizzlyChat";
+			};
+			name = Release;
+		};
+		D9530ABB27CBAF7D00B0C20E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8VBMHL3Y6P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grizzlystudio.GrizzlyChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GrizzlyChat;
+			};
+			name = Debug;
+		};
+		D9530ABC27CBAF7D00B0C20E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8VBMHL3Y6P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grizzlystudio.GrizzlyChatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GrizzlyChat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9530A8B27CBAF7B00B0C20E /* Build configuration list for PBXProject "GrizzlyChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9530AB227CBAF7D00B0C20E /* Debug */,
+				D9530AB327CBAF7D00B0C20E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9530AB427CBAF7D00B0C20E /* Build configuration list for PBXNativeTarget "GrizzlyChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9530AB527CBAF7D00B0C20E /* Debug */,
+				D9530AB627CBAF7D00B0C20E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9530AB727CBAF7D00B0C20E /* Build configuration list for PBXNativeTarget "GrizzlyChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9530AB827CBAF7D00B0C20E /* Debug */,
+				D9530AB927CBAF7D00B0C20E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9530ABA27CBAF7D00B0C20E /* Build configuration list for PBXNativeTarget "GrizzlyChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9530ABB27CBAF7D00B0C20E /* Debug */,
+				D9530ABC27CBAF7D00B0C20E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D9530ACB27CC097700B0C20E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D9530ACC27CC097800B0C20E /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9530ACB27CC097700B0C20E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		D9530ACE27CC097800B0C20E /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9530ACB27CC097700B0C20E /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D9530A8827CBAF7B00B0C20E /* Project object */;
+}
